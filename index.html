@@ -314,7 +314,7 @@
   <body>
     <!-- Login Page -->
     <div class="login-container" id="login-page">
-      <h1>Login to Colour Tread BOT</h1>
+      <h1>BDT GAME HACK AI</h1>
       <form id="login-form">
         <input type="text" id="username" placeholder="Username" required />
         <input type="password" id="password" placeholder="Password" required />
@@ -330,7 +330,7 @@
 
     <!-- Main Page (Hidden Initially) -->
     <div class="container" id="main-page">
-      <h1>COLOUR TREADING BOT</h1>
+      <h1>REZA COLOUR TREADING BOT</h1>
       <div class="card">
         <h2 class="section-title">Generate Trading Signals</h2>
         <div>
@@ -361,8 +361,8 @@
           <label for="filter-select">Signal Type</label>
           <select id="filter-select">
             <option value="ALL">All</option>
-            <option value="SMALL">BIG</option>
-            <option value="PUT">SMALL</option>
+            <option value="CALL">SMALL</option>
+            <option value="PUT">BIG</option>
           </select>
         </div>
         <div>
@@ -435,7 +435,7 @@
 
         let signals = [];
         for (let i = 0; i < signalCount; i++) {
-          let direction = Math.random() > 0.5 ? "CALL" : "PUT";
+          let direction = Math.random() > 0.5 ? "SMALL" : "BIG";
           if (filter !== "ALL" && filter !== direction) {
             continue;
           }
