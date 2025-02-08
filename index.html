@@ -16,6 +16,7 @@
         /* পুরো স্ক্রিন কভার করবে */
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -74,6 +75,32 @@
             100% { transform: rotate(360deg); }
         }
 
+        /* যোগাযোগ তথ্য */
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #00afff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         /* ছোট ডিভাইসের জন্য */
         @media (max-width: 600px) {
             .timeout-message {
@@ -83,6 +110,15 @@
                 font-size: 2rem;
             }
             .timeout-message p {
+                font-size: 1rem;
+            }
+            .contact-info {
+                padding: 10px;
+            }
+            .contact-info h2 {
+                font-size: 1.2rem;
+            }
+            .contact-info p {
                 font-size: 1rem;
             }
         }
@@ -96,16 +132,19 @@
         <div class="loader"></div>
     </div>
 
+    <!-- যোগাযোগ তথ্য -->
+    <div class="contact-info">
+        <h2>📞 যোগাযোগ করুন</h2>
+        <p>📱 Telegram: <a href="https://t.me/xmostafizur" target="_blank">@xmostafizur</a></p>
+        <p>📱 Telegram: <a href="https://t.me/forhad12478" target="_blank">@forhad12478</a></p>
+        <p>📞 নম্বর: <a href="tel:01405985541">01405985541</a></p>
+    </div>
+
     <script>
         // ৫ সেকেন্ড পর ব্যাকগ্রাউন্ড আরও গাঢ় লাল হবে
         setTimeout(() => {
             document.body.style.backgroundColor = "#800000";
         }, 5000);
-
-        // ১০ সেকেন্ড পর ইউজারকে অন্য পেজে পাঠাবে (যদি দরকার হয়)
-        setTimeout(() => {
-            window.location.href = "https://example.com"; // এখানে আপনার রিডাইরেক্ট লিংক দিন
-        }, 10000);
     </script>
 </body>
 </html>
